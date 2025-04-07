@@ -1,257 +1,399 @@
-<html>
-    <head>
-        <title>Portofolio Muhammad Fidly Alfirdaus</title>
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
-        <style>
-            body {
-                font-family: 'Roboto', sans-serif;
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-            }
-            .background {
-                background-image: url('image/background.jpg');
-                background-size: cover;
-                background-position: center;
-                height: 100%;
-                position: relative;
-                color: white;
-            }
-            .navbar {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                padding: 20px 50px;
-                background: rgba(0, 0, 0, 0.5);
-            }
-            .navbar a {
-                color: white;
-                text-decoration: none;
-                margin: 0 15px;
-                font-size: 18px;
-            }
-            .navbar a:hover {
-                text-decoration: underline;
-            }
-            .navbar .logo {
-                color: #7FFF00;
-                font-size: 24px;
-                font-weight: bold;
-            }
-            .content {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                text-align: center;
-            }
-            .content h1 {
-                font-size: 60px;
-                color: #7FFF00;
-                margin: 0;
-            }
-            .content p {
-                font-size: 24px;
-                margin: 10px 0;
-            }
-            .scroll-down {
-                position: absolute;
-                bottom: 20px;
-                left: 50%;
-                transform: translateX(-50%);
-                font-size: 24px;
-                color: white;
-                cursor: pointer;
-            }
-            .project {
-                padding: 50px 0;
-                text-align: center;
-            }
-            .about img {
-                width: 300px;
-                border-radius: 10px;
-            }
-            .about p {
-                max-width: 600px;
-                margin: 20px auto;
-                line-height: 1.6;
-            }
-            .btn {
-                background: #8bc34a;
-                color: white;
-                padding: 10px 20px;
-                text-decoration: none;
-                border-radius: 5px;
-            }
-            .services, .project, .contact {
-                background: #f9f9f9;
-            }
-            .services h2, .project h2, .contact h2 {
-                margin-bottom: 20px;
-            }
-            .work-item {
-                display: inline-block;
-                width: 100%;
-                height: auto;
-                margin: 1%;
-                vertical-align: top;
-            }
-            
-            .work-item img {
-                font-size: 50px;
-                color: #8bc34a;
-            }
-            .work-item p {
-                margin: 10px 0;
-                font-family: 'Times New Roman', sans-serif;
-            }
-            .contact form {
-                max-width: 600px;
-                margin: 0 auto;
-            }
-            .contact input, .contact textarea {
-                width: 100%;
-                padding: 10px;
-                margin: 10px 0;
-                border: 1px solid #ccc;
-                border-radius: 5px;
-            }
-            .contact button {
-                background: #8bc34a;
-                color: white;
-                padding: 10px 20px;
-                border: none;
-                border-radius: 5px;
-                cursor: pointer;
-            }
-            footer {
-                background: #333;
-                color: white;
-                text-align: center;
-                padding: 20px 0;
-            }
-            footer p {
-                margin: 5px 0;
-                font-family: 'Times New Roman', sans-serif;
-            }
-            footer .social i {
-                margin: 0 10px;
-                color: #8bc34a;
-            }
-            .progress-container {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                width: 70%;
-                margin: 50px auto;
-            }
-            .progress-step {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-                color: #b0b0b0;
-            }
-            .progress-step.active {
-                color: #007bff;
-            }
-            .progress-step .circle {
-                width: 30px;
-                height: 30px;
-                border-radius: 50%;
-                border: 2px solid #b0b0b0;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                margin-bottom: 10px;
-            }
-            .progress-step.active .circle {
-                border-color: #007bff;
-                background-color: #e6f0ff;
-            }
-            .progress-step .circle i {
-                color: #007bff;
-            }
-            .progress-step.active .circle i {
-                color: #007bff;
-            }
-            .progress-step .line {
-                width: 100px;
-                height: 2px;
-                background-color: #b0b0b0;
-                position: absolute;
-                top: 15px;
-                z-index: -1;
-            }
-            .progress-step:first-child .line {
-                display: none;
-            }
-            .progress-step.active .line {
-                background-color: #007bff;
-            }
-            html {
-                scroll-behavior: smooth;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="background">
-            <div class="navbar">
-                <div class="logo">PROFILE PORTOFOLIO</div>
-                <div class="menu">
-                    <a href="#">Profile</a>
-                    <a href="#project">Experience Project</a>
-                    <a href="#contact">Contact</a>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- title -->
+    <title>Portfolio</title>
+
+    <!-- Bootstrap css -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/et-line-icons.css" rel="stylesheet">
+    <link href="assets/css/normalize.css" rel="stylesheet">
+    <link href="assets/css/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/css/owl.transitions.css" rel="stylesheet">
+    <link href="assets/css/magnific-popup.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
+
+</head>
+<style>
+    .posisi-icon{
+        margin-left: 15px;
+    }
+</style>
+<body>
+
+    <div id="preloader"></div>
+
+    <!-- Navigation area starts -->
+    <div class="menu-area navbar-fixed-top">
+        <div class="container">
+            <div class="row">
+
+                <!-- Navigation starts -->
+                <div class="col-md-12">
+                    <div class="mainmenu">
+                        <div class="navbar navbar-nobg">
+                            <div class="navbar-header">
+                                <a class="navbar-brand" href="#"><span>Portofolio</span></a>
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+
+                            <div class="navbar-collapse collapse">
+                                <nav>
+                                    <ul class="nav navbar-nav navbar-right">
+                                        <li class="active"><a class="smooth_scroll" href="#slider">Beranda</a></li>
+                                        <li><a class="smooth_scroll" href="#service">Sertifikasi</a></li>
+                                        <li><a class="smooth_scroll" href="#work">Pengalaman</a></li>
+                                        <li><a class="smooth_scroll" href="#contact">Kontak saya</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Navigation ends -->
+
+            </div>
+        </div>
+    </div>
+    <!-- Navigation area ends -->
+
+
+
+    <!-- Slider area starts -->
+    <section id="slider" class="slider-area">
+        <div class="table">
+            <div class="table-cell">
+                <div class="intro-text">
+                    <div class="container">
+                        <div class="row">
+
+                            <!-- intro image -->
+                            <div class="col-md-12">
+                                <h2>Muhammad Fidly Alfirdaus</h2>
+                                <div class="typejs"></div>
+                                <div class="clearfix"></div>
+                                <a href="#about" class="icon-btn smooth_scroll">
+                                    <i class="fa fa-angle-double-down"></i>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="content">
-                <p>Muhammad Fidly Alfirdaus</p>
-                <h1>Application Developer</h1>
-            </div>
-            <div class="scroll-down" id="scroll-down">
-                <i class="fas fa-chevron-down"></i>
-            </div>
         </div>
-        <div class="project" id="project">
-            <h2>My Project Experience</h2>
-            <p>Here is my experience in developing projects as an application developer.</p>
-            <div class="work-item">
-                <img alt="Project image 1" height="auto" style="width: 90%;" src="image/hris.png"/>
-                <p>1. HRIS (Human Resource Information System)</p>
-                <p style="text-align: center; padding-left: 50px; padding-right: 50px;">Sebuah Sistem Informasi yang digunakan oleh seluruh karyawan perusahaan, yang berfungsi untuk mengelola data karyawan, yang didalamnya terdapat beberapa fitur yaitu penggajian, pengajuan cuti, pengajuan dinas, absensi karyawan dan lain-lain. setiap fungsi dapat diakses berdasarkan role nya masing-masing</p>
+    </section>
+    <!-- Slider area ends -->
+
+    <!-- Service area starts -->
+    <section id="service" class="service-area section-big">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="section-title">
+                        <h2><span>Skill</span> Sertifikasi</h2>
+                    </div>
+                </div>
             </div>
-            <div class="work-item">
-                <img alt="Project image 1" height="auto" style="width: 90%;" src="image/Salesforce.png"/>
-                <p>2. Sales Force</p>
-                <p style="text-align: center; padding-left: 50px; padding-right: 50px;">Sebuah Sistem Informasi yang dibuat khusus untuk SPG dan SPB Perusahaan, sistem Sales Force Digunakan SPG dan SPB untuk melakukan report penjualan dan input data customer, selain SPB dan SPG terdapat role lain untuk atasan mengelola dan mengetahui data penjualan SPG atau SPB dan customernya</p>
+
+            <div class="row">
+
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="service-box" style="height: 175px;">
+                        <span class="icon-mobile"></span>
+                        <h3>Pengembangan Aplikasi</h3>
+                        <p>Sertifikasi Uji Kompetensi Pemrograman Website Menggunakan Framework Laravel, dan Pemrograman Android Basic.</p>
+                    </div>
+                    <a href="image/programsertifikat.jpeg" class="btn btn-success" target="_blank" style="width: 100%;">Lihat Sertifikat</a>
+                </div>
+
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="service-box"  style="height: 175px;">
+                        <span class="icon-layers"></span>
+                        <h3>Microsoft Office</h3>
+                        <p>Microsoft Office Specialist (MOS) Excel 2016, Yang Mencakup Keahlian Dalam
+                            Pemformatan data, Penggunaan Rumus dan Fungsi Dasar, Serta Visualisasi Data Menggunakan
+                            Berbagai Jenis Grafik Untuk Analisis Yang Lebih Efektif.</p>
+                    </div>
+                    <a href="image/microsoftsertifikat.jpeg" class="btn btn-success" target="_blank" style="width: 100%;">Lihat Sertifikat</a>
+                </div>
+
             </div>
-            <div class="work-item">
-                <img alt="Project image 1" height="auto" style="width: 90%;" src="image/dgtrans.png"/>
-                <p>3. Dialogue Trans</p>
-                <p style="text-align: center; padding-left: 50px; padding-right: 50px;">Dialogue Trans merupakan sistem informasi yang dibuat untuk proses distribusi atau pengiriman, proses distribusi barang dimulai dengan pengajuan dokumen, dokumen yang diajukan dapat dikirimkan setelah dilakukan verifikasi. Proses distribusi dapat diketahui mulai dari dikirimkan oleh ekspedisi sampai pengiriman diterima dan dikirimkan bukti foto dokumen distribusi telah diterima.</p>
-            </div>
+
         </div>
-        <footer class="footer" id="contact">
-            <p>Muhammad Fidly Alfirdaus, Bandung, Jawa Barat, Indonesia</p><br>
-            <div class="social">
-                <i class="fab fa-whatsapp"> +62 812 2434 2644</i>
+    </section>
+    <!-- Service area ends -->
+
+    <!-- Work area starts -->
+    <section id="work" class="works section-big">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="section-title">
+                        <h2>Pengalaman Pengembangan Aplikasi</h2>
+                        <p>The new common language will be more simple and regular than.</p>
+                    </div>
+                </div>
             </div>
-            <br>
-            <div class="social">
-                <i class="far fa-envelope"> fidly38@gmail.com</i>
+
+            <div class="row">
+
+                <!-- Works filter -->
+                <ul class="work filters">
+                    <li class="filter posisi-icon" data-filter="all">
+                        <span class="icon-presentation"></span> All
+                    </li>
+                    <li class="filter posisi-icon" data-filter=".hris">
+                        <span class="icon-browser"></span> HRIS
+                    </li>
+                    <li class="filter posisi-icon" data-filter=".salesforce">
+                        <span class="icon-browser"></span> Sales
+                    </li>
+                    <li class="filter posisi-icon" data-filter=".dgtrans">
+                        <span class="icon-browser"></span> Dgtrans
+                    </li>
+                    <li class="filter" data-filter=".produksi">
+                        <span class="icon-browser"></span> Produksi
+                    </li>
+                </ul>
+                <!-- / Works filter -->
             </div>
-            <br> 
-            <div class="social">
-                <i class="fab fa-instagram"> fidyalfrds</i>
+
+            <div class="portfolio">
+                <div class="row work-items">
+
+                    <!-- HRIS -->
+                    <div class="col-md-6 col-sm-6 mix app hris">
+                        <div class="item">
+                            <a href="image/hris.png" class="work-popup">
+                                <img src="image/hris.png" alt="" style="width: 100%; height: 260px;">
+                                <div class="overlay">
+                                    <span class="icon-focus"></span>
+                                </div>
+                                <div class="title">Login Form HRIS</div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6 mix hris">
+                        <div class="item">
+                            <a href="image/dashboardhris.png" class="work-popup">
+                                <img src="image/dashboardhris.png" alt="" style="width: 100%; height: 260px;">
+                                <div class="overlay">
+                                    <span class="icon-focus"></span>
+                                </div>
+                                <div class="title">Dashboard HRIS</div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6 mix hris">
+                        <div class="item">
+                            <a href="image/formlaporankpi.png" class="work-popup">
+                                <img src="image/formlaporankpi.png" alt="" style="width: 100%; height: 260px;">
+                                <div class="overlay">
+                                    <span class="icon-focus"></span>
+                                </div>
+                                <div class="title">Form List & Download Laporan KPI</div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- HRIS -->
+
+                    <!-- Sales Force -->
+                    <div class="col-md-6 col-sm-6 mix typography salesforce">
+                        <div class="item">
+                            <a href="image/dashboardsalesforce.png" class="work-popup">
+                                <img src="image/dashboardsalesforce.png" alt="" style="width: 100%; height: 260px;">
+                                <div class="overlay">
+                                    <span class="icon-focus"></span>
+                                </div>
+                                <div class="title">Dashboard Sales Force</div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6 mix app salesforce">
+                        <div class="item">
+                            <a href="image/masterdatasalesforce.png" class="work-popup">
+                                <img src="image/masterdatasalesforce.png" alt="" style="width: 100%; height: 260px;">
+                                <div class="overlay">
+                                    <span class="icon-focus"></span>
+                                </div>
+                                <div class="title">Master Data Salesforce</div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6 mix app salesforce">
+                        <div class="item">
+                            <a href="image/reportsalesforce.png" class="work-popup">
+                                <img src="image/reportsalesforce.png" alt="" style="width: 100%; height: 260px;">
+                                <div class="overlay">
+                                    <span class="icon-focus"></span>
+                                </div>
+                                <div class="title">List Report Menu Sales Force</div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Sales Force -->
+
+                    <!-- Produksi -->
+                    <div class="col-md-6 col-sm-6 mix typography produksi">
+                        <div class="item">
+                            <a href="image/loginformproduksi.png" class="work-popup">
+                                <img src="image/loginformproduksi.png" alt="" style="width: 100%; height: 260px;">
+                                <div class="overlay">
+                                    <span class="icon-focus"></span>
+                                </div>
+                                <div class="title">Form Login Produksi Apps</div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6 mix app produksi">
+                        <div class="item">
+                            <a href="image/formmasterproduksi.png" class="work-popup">
+                                <img src="image/formmasterproduksi.png" alt="" style="width: 100%; height: 260px;">
+                                <div class="overlay">
+                                    <span class="icon-focus"></span>
+                                </div>
+                                <div class="title">Master Data Produksi Apps</div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6 mix app produksi">
+                        <div class="item">
+                            <a href="image/laporanproduksi.png" class="work-popup">
+                                <img src="image/laporanproduksi.png" alt="" style="width: 100%; height: 260px;">
+                                <div class="overlay">
+                                    <span class="icon-focus"></span>
+                                </div>
+                                <div class="title">List Menu Laporan Produksi Apps</div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Produksi -->
+
+                    <!-- Dgtrans -->
+                    <div class="col-md-6 col-sm-6 mix app dgtrans">
+                        <div class="item">
+                            <a href="image/logindgtrans.png" class="work-popup">
+                                <img src="image/logindgtrans.png" alt="" style="width: 100%; height: 260px;">
+                                <div class="overlay">
+                                    <span class="icon-focus"></span>
+                                </div>
+                                <div class="title">Form Login Dgtrans</div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6 mix typography dgtrans">
+                        <div class="item">
+                            <a href="image/dashboarddgtrans.png" class="work-popup">
+                                <img src="image/dashboarddgtrans.png" alt="" style="width: 100%; height: 260px;">
+                                <div class="overlay">
+                                    <span class="icon-focus"></span>
+                                </div>
+                                <div class="title">Dashboard Dgtrans</div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6 mix app dgtrans">
+                        <div class="item">
+                            <a href="image/dashboarddgtrans2.png" class="work-popup">
+                                <img src="image/dashboarddgtrans2.png" alt="" style="width: 100%; height: 260px;">
+                                <div class="overlay">
+                                    <span class="icon-focus"></span>
+                                </div>
+                                <div class="title">Dashboard Dgtrans</div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6 mix app dgtrans">
+                        <div class="item">
+                            <a href="image/trackinsjdgtrans.png" class="work-popup">
+                                <img src="image/trackinsjdgtrans.png" alt="" style="width: 100%; height: 260px;">
+                                <div class="overlay">
+                                    <span class="icon-focus"></span>
+                                </div>
+                                <div class="title">Tracking SJ Dgtrans</div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6 mix app dgtrans">
+                        <div class="item">
+                            <a href="image/distribusidgtrans.png" class="work-popup">
+                                <img src="image/distribusidgtrans.png" alt="" style="width: 100%; height: 260px;">
+                                <div class="overlay">
+                                    <span class="icon-focus"></span>
+                                </div>
+                                <div class="title">Master Data Dgtrans</div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Dgtrans -->
+                                        
+                </div>
             </div>
-        </footer>
-    </body>
+
+        </div>
+    </section>
+    <!-- Work area ends -->
+
+    <!-- Footer area starts -->
+    <footer class="footer-area" id="contact">
+        <div class="container">
+
+            <div class="address">
+                <div class="address-box clearfix">
+                    <p>Bandung, Jawa Barat, Indonesia</p>
+                </div>
+                <div class="address-box clearfix">
+                    <p>+62 812-2434-2644</p>
+                </div>
+                <div class="address-box clearfix">
+                    <p>fidly38@gmail.com</p>
+                </div>
+            </div>
+
+            <ul class="social-ul">
+                <li><a href="https://www.instagram.com/fidyalfrds" target="_blank"><span class="fa fa-instagram"></span></a></li>
+                <li><a href="https://www.linkedin.com/in/fidyalfrds" target="_blank"><span class="fa fa-linkedin"></span></a></li>
+            </ul>
+
+            <p class="copyright">&copy; 2025 Portofolio </p>
+
+        </div>
+    </footer>
+    <!-- Footer area ends -->
+
+
+
+    <!-- Latest jQuery -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery.mixitup.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/jquery.waypoints.min.js"></script>
+    <script src="assets/js/jquery.ajaxchimp.min.js"></script>
+    <script src="assets/js/typed.js"></script>
+    <script src="assets/js/main_script.js"></script>
+</body>
+
 </html>
-
-<script>
-    document.getElementById('scroll-down').addEventListener('click', function() {
-        document.getElementById('project').scrollIntoView({ behavior: 'smooth' });
-    });
-</script>
-
