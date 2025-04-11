@@ -21,6 +21,38 @@
     .posisi-icon{
         margin-left: 15px;
     }
+    .sertifikat {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .sertifikat > [class*='col-'] {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .service-column {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        padding: 20px;
+        margin-bottom: 35px;
+        border-radius: 8px;
+        background: #fff;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .service-box {
+        margin: auto;
+        margin-top: 0px;
+        padding: 15px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .btn-full-width {
+        width: 100%;
+    }
 </style>
 <body>
 
@@ -104,30 +136,52 @@
                     </div>
                 </div>
             </div>
-
-            <div class="row">
-
+            
+            <div class="row sertifikat">
+            
                 <div class="col-md-6 col-sm-6 col-xs-12">
-                    <div class="service-box" style="height: 175px;">
-                        <span class="icon-mobile"></span>
-                        <h3>Pengembangan Aplikasi</h3>
-                        <p>Sertifikasi Uji Kompetensi Pemrograman Website Menggunakan Framework Laravel, dan Pemrograman Android Basic.</p>
+                    <div class="service-column">
+                        <div class="service-box">
+                            <h3>Pengembangan Aplikasi</h3>
+                            <p>Sertifikasi Uji Kompetensi Pemrograman Website Menggunakan Framework Laravel, dan Pemrograman Android Basic.</p>
+                        </div>
+                        <a href="image/programsertifikat.jpeg" class="btn btn-success btn-full-width" target="_blank">Lihat Sertifikat</a>
                     </div>
-                    <a href="image/programsertifikat.jpeg" class="btn btn-success" target="_blank" style="width: 100%;">Lihat Sertifikat</a>
+                </div>
+            
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="service-column">
+                        <div class="service-box">
+                            <h3>Microsoft Office</h3>
+                            <p>Microsoft Office Specialist (MOS) Excel 2016, Yang Mencakup Keahlian Dalam
+                                Pemformatan data, Penggunaan Rumus dan Fungsi Dasar, Serta Visualisasi Data Menggunakan
+                                Berbagai Jenis Grafik Untuk Analisis Yang Lebih Efektif.</p>
+                        </div>
+                        <a href="image/microsoftsertifikat.jpeg" class="btn btn-success btn-full-width" target="_blank">Lihat Sertifikat</a>
+                    </div>
                 </div>
 
                 <div class="col-md-6 col-sm-6 col-xs-12">
-                    <div class="service-box"  style="height: 175px;">
-                        <span class="icon-layers"></span>
-                        <h3>Microsoft Office</h3>
-                        <p>Microsoft Office Specialist (MOS) Excel 2016, Yang Mencakup Keahlian Dalam
-                            Pemformatan data, Penggunaan Rumus dan Fungsi Dasar, Serta Visualisasi Data Menggunakan
-                            Berbagai Jenis Grafik Untuk Analisis Yang Lebih Efektif.</p>
+                    <div class="service-column">
+                        <div class="service-box">
+                            <h3>Mikrotik MTCNA</h3>
+                            <p>SSertifikasi Dasar <i>MikroTik Certified Network Associate</i> (MTCNA) yang mencakup konfigurasi jaringan, routing, firewall,  manajemen wireless pada tahun 2022.</p>
+                        </div>
+                        <a href="https://drive.google.com/file/d/1L6eAXLRRklVMJMBOxfbFSB9-rHlGxWe8/view?usp=sharing" class="btn btn-success btn-full-width" target="_blank">Lihat Sertifikat</a>
                     </div>
-                    <a href="image/microsoftsertifikat.jpeg" class="btn btn-success" target="_blank" style="width: 100%;">Lihat Sertifikat</a>
                 </div>
 
-            </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="service-column">
+                        <div class="service-box">
+                            <h3>Training Basic Flutter</h3>
+                            <p>Pelatihan Pemrograman Dasar Flutter Yang Mempelajari penggunaan widget, form validation, navigation & routing, State Management, dan pengambilan data dari REST API.</p>
+                        </div>
+                        <a href="https://drive.google.com/file/d/18dJ--E2ax-mORfEdoWiORfAar3ZltMfY/view?usp=sharing" class="btn btn-success btn-full-width" target="_blank">Lihat Sertifikat</a>
+                    </div>
+                </div>
+            
+            </div>            
 
         </div>
     </section>
@@ -153,16 +207,16 @@
                         <span class="icon-presentation"></span> All
                     </li>
                     <li class="filter posisi-icon" data-filter=".hris">
-                        <span class="icon-browser"></span> HRIS
+                        <span class="icon-profile-male"></span> HRIS
                     </li>
                     <li class="filter posisi-icon" data-filter=".salesforce">
-                        <span class="icon-browser"></span> Sales
+                        <span class="icon-pricetags"></span> Sales
                     </li>
                     <li class="filter posisi-icon" data-filter=".dgtrans">
-                        <span class="icon-browser"></span> Dgtrans
+                        <span class="icon-layers"></span> Dgtrans
                     </li>
                     <li class="filter" data-filter=".produksi">
-                        <span class="icon-browser"></span> Produksi
+                        <span class="icon-tools"></span> Produksi
                     </li>
                 </ul>
                 <!-- / Works filter -->
